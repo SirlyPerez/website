@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sirli Perez - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar" id="sidebar">
+      <button id="toggleBtn" onclick="toggleSidebar()">☰</button>
+      <a href="#about-me">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- About Me -->
+      <section id="about-me" class="container">
+        <div class="profile_section">
+          <img src="html_finalprojimages/profile.png" class="profile_image" />
+          <h1>
+            Hi, I'm Sirli Perez
+            <img src="html_finalprojimages/waving-hand.png" width="60px" />
+          </h1>
+          <p>
+            I am a software developer with over 7 years of experience in software
+            development, cloud computing, and database management. My passion lies in
+            creating scalable and efficient solutions for complex problems while
+            collaborating with multidisciplinary teams to achieve extraordinary goals.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="all_skills">
+          <div class="skill">
+            <img src="html_finalprojimages/python.png" />
+            <h6>Python</h6>
+            <p>5+ years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/sql.png" />
+            <h6>SQL Server</h6>
+            <p>7+ years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/uml.png" />
+            <h6>UML</h6>
+            <p>5 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/azure.png" />
+            <h6>Azure</h6>
+            <p>5+ years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/net.png" />
+            <h6>.NET</h6>
+            <p>4 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/react.png" />
+            <h6>React.js</h6>
+            <p>3 years experience</p>
+          </div>
+          <div class="skill">
+            <img src="html_finalprojimages/docker.png" />
+            <h6>Docker</h6>
+            <p>2 years experience</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Data Insights Platform</h3>
+            <p>
+              Built a comprehensive data analytics platform leveraging Python and
+              advanced libraries (pandas, matplotlib) to process and visualize datasets,
+              delivering actionable insights for businesses.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Cloud Database Migration</h3>
+            <p>
+              Successfully migrated large-scale databases to Azure SQL, ensuring optimized
+              performance, minimal downtime, and enhanced security.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Library Management System</h3>
+            <p>
+              Designed and implemented a robust library management system using .NET and
+              MVC architecture, enabling efficient inventory tracking and user management.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>E-Commerce Dashboard</h3>
+            <p>
+              Developed an interactive e-commerce dashboard using React.js and Azure APIs,
+              integrating real-time analytics and user behavior tracking.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Containerized Microservices</h3>
+            <p>
+              Deployed microservices using Docker containers, improving scalability and
+              deployment efficiency for a distributed system.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recommendations -->
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="all_recommendations">
+          <div class="recommendation">
+            <blockquote>
+              Sirli is an outstanding developer with a deep understanding of cloud computing
+              and backend technologies. She is a proactive team player who excels at
+              problem-solving.
+            </blockquote>
+          </div>
+          <div class="recommendation">
+            <blockquote>
+              I worked with Sirli on an e-commerce project, and her expertise in React.js and
+              backend development made the project a tremendous success.
+            </blockquote>
+          </div>
+          <div class="recommendation">
+            <blockquote>
+              Her ability to manage databases and lead complex migrations to cloud platforms
+              is exceptional. She truly elevates every team she is part of.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("collapsed");
+      }
+    </script>
+  </body>
+</html>

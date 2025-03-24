@@ -1,0 +1,224 @@
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #ffc0cb; /* Rosado pastel */
+  overflow-x: hidden;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.sidebar.collapsed {
+  width: 60px; /* Tamaño reducido al colapsar */
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #ff69b4; /* Rosado brillante */
+}
+
+#toggleBtn {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#toggleBtn:hover {
+  background-color: #ff6f61;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px; /* Espacio para el sidebar */
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed + .main-content {
+  margin-left: 60px; /* Ajusta el margen cuando el sidebar está colapsado */
+}
+
+/* Resto del código existente se conserva aquí... */
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ffe4e1; /* Fondo rosado pastel */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: #ffc0cb; /* Fondo rosado pastel */
+  padding: 1rem;
+}
+
+.topmenu {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.topmenu:hover {
+  color: #ff69b4; /* Color hover rosado brillante */
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.profile_name {
+  color: #ff6f61; /* Tono rosado */
+  font-size: 20px;
+  text-align: left;
+}
+
+.contact_info {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Titles */
+h2, h1 {
+  color: #ff6f61;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about-me p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* About Me Section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile_image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Skills Section */
+.all_skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  border: 1px solid #ff6f61;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+.project-card {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 90%;
+  border: 1px solid #ffc0cb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Recommendations Section */
+.recommendation {
+  background-color: #fff0f5; /* Fondo rosado muy claro */
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid #ffc0cb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ffc0cb;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: #ffc0cb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff69b4;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .all_skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile_name, .topdiv {
+    text-align: center;
+    padding: 0;
+  }
+
+  #home {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2, h1 {
+    font-size: 1.5rem;
+  }
+
+  .skill {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
